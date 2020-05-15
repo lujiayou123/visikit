@@ -1,0 +1,30 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
+exp = pd.read_csv('csv/exp/humanoid-dir/progress.csv')
+maml = pd.read_csv('csv/maml/humanoid-dir/progress.csv')
+pearl = pd.read_csv('csv/pearl/humanoid-dir/progress.csv')
+pearl_mirror = pd.read_csv('csv/pearl-mirror/humanoid-dir/progress.csv')
+promp = pd.read_csv('csv/promp/humanoid-dir/progress.csv')
+rl2 = pd.read_csv('csv/rl2/humanoid-dir/progress.csv')
+
+def to_percent(temp, position):
+    return '$%.1f$' % (temp / 1000000)
+plt.style.use('seaborn')
+plt.grid(True,color='white')
+plt.gca().xaxis.set_major_formatter(FuncFormatter(to_percent))
+plt.plot(exp['Number of train steps total'],exp['AverageReturn_all_test_tasks'],c='red')
+plt.plot(pearl['Number of train steps total'],pearl['AverageReturn_all_test_tasks'],c='blue')
+# plt.plot(pearl_mirror['Number of train steps total'],pearl_mirror['AverageReturn_all_test_tasks'],c='orange')
+plt.plot(maml['n_timesteps'],maml['Step_1-AverageReturn'],c='green')
+plt.plot(rl2['n_timesteps'],rl2['train-AverageReturn'],c='purple')
+plt.plot(promp['n_timesteps'],promp['Step_1-AverageReturn'],c='yellow')
+plt.hlines(518,0,1e6,colors="purple",linestyles='--')
+plt.hlines(189,0,1e6,colors="green",linestyles='--')
+plt.hlines(290,0,1e6,colors="yellow",linestyles='--')
+plt.xlabel("百万训练时间步")
+plt.xlim(0 , 1e6 )
+plt.ylabel("平均回报")
+plt.title("humanoid-dir")
+plt.savefig("humanoid-dir.eps")
+plt.show()
