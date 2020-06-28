@@ -21,27 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="28bb4e70-a6b9-4fc2-89fa-6922d8c8623a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-dir.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-dir.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-dir.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-goal.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-goal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ant-goal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-dir.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-dir.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-dir.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-vel.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-vel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheetah-vel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/humanoid-dir.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/humanoid-dir.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/humanoid-dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant-dir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ant-dir.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant-goal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ant-goal.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cheetah-dir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cheetah-dir.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/walker2d.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/walker2d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/walker2d.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,22 +246,38 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1830" height="219" key="GridCell.Tab.0.bottom" timestamp="1593322594461">
+    <state width="1830" height="219" key="GridCell.Tab.0.bottom" timestamp="1593323178097">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1830" height="219" key="GridCell.Tab.0.bottom/67.24.1853.1056@67.24.1853.1056" timestamp="1593322594461" />
-    <state width="1830" height="219" key="GridCell.Tab.0.center" timestamp="1593322594461">
+    <state width="1830" height="219" key="GridCell.Tab.0.bottom/67.24.1853.1056@67.24.1853.1056" timestamp="1593323178097" />
+    <state width="1830" height="219" key="GridCell.Tab.0.center" timestamp="1593323178097">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1830" height="219" key="GridCell.Tab.0.center/67.24.1853.1056@67.24.1853.1056" timestamp="1593322594461" />
-    <state width="1830" height="219" key="GridCell.Tab.0.left" timestamp="1593322594460">
+    <state width="1830" height="219" key="GridCell.Tab.0.center/67.24.1853.1056@67.24.1853.1056" timestamp="1593323178097" />
+    <state width="1830" height="219" key="GridCell.Tab.0.left" timestamp="1593323178096">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1830" height="219" key="GridCell.Tab.0.left/67.24.1853.1056@67.24.1853.1056" timestamp="1593322594460" />
-    <state width="1830" height="219" key="GridCell.Tab.0.right" timestamp="1593322594461">
+    <state width="1830" height="219" key="GridCell.Tab.0.left/67.24.1853.1056@67.24.1853.1056" timestamp="1593323178096" />
+    <state width="1830" height="219" key="GridCell.Tab.0.right" timestamp="1593323178097">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1830" height="219" key="GridCell.Tab.0.right/67.24.1853.1056@67.24.1853.1056" timestamp="1593322594461" />
+    <state width="1830" height="219" key="GridCell.Tab.0.right/67.24.1853.1056@67.24.1853.1056" timestamp="1593323178097" />
+    <state width="1830" height="364" key="GridCell.Tab.1.bottom" timestamp="1593323169665">
+      <screen x="67" y="24" width="1853" height="1056" />
+    </state>
+    <state width="1830" height="364" key="GridCell.Tab.1.bottom/67.24.1853.1056@67.24.1853.1056" timestamp="1593323169665" />
+    <state width="1830" height="364" key="GridCell.Tab.1.center" timestamp="1593323169665">
+      <screen x="67" y="24" width="1853" height="1056" />
+    </state>
+    <state width="1830" height="364" key="GridCell.Tab.1.center/67.24.1853.1056@67.24.1853.1056" timestamp="1593323169665" />
+    <state width="1830" height="364" key="GridCell.Tab.1.left" timestamp="1593323169665">
+      <screen x="67" y="24" width="1853" height="1056" />
+    </state>
+    <state width="1830" height="364" key="GridCell.Tab.1.left/67.24.1853.1056@67.24.1853.1056" timestamp="1593323169665" />
+    <state width="1830" height="364" key="GridCell.Tab.1.right" timestamp="1593323169665">
+      <screen x="67" y="24" width="1853" height="1056" />
+    </state>
+    <state width="1830" height="364" key="GridCell.Tab.1.right/67.24.1853.1056@67.24.1853.1056" timestamp="1593323169665" />
     <state x="487" y="174" key="SettingsEditor" timestamp="1593310257376">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>

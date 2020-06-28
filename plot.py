@@ -7,7 +7,7 @@ import os
 SEED_NUM = 2
 ENVs = ["ant-dir", "ant-goal", "cheetah-dir", "cheetah-vel", "humanoid-dir", "walker2d"]
 TASK_LIMs = [3e6, 1e6, 1e6, 1e6, 1e6, 2e6]
-task_index = 0
+task_index = 5
 ENV = ENVs[task_index]
 TASK_LIM = TASK_LIMs[task_index]
 
@@ -100,7 +100,7 @@ sns.tsplot(data=pearl, time="Number of train steps total", value="AverageReturn_
 plt.hlines(rl2_lim, 0, TASK_LIM, colors="purple", linestyles='--')
 plt.hlines(maml_lim, 0, TASK_LIM, colors="green", linestyles='--')
 plt.hlines(promp_lim, 0, TASK_LIM, colors="yellow", linestyles='--')
-plt.xlabel("Million Train Steps")
+plt.xlabel("Million Time Steps")
 plt.xlim(0, TASK_LIM )
 plt.ylabel("Average Return")
 plt.title(ENV)
