@@ -1,8 +1,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
-exp = pd.read_csv('csv/exp/ant-dir/progress.csv')
-maml = pd.read_csv('csv/maml/ant-dir/progress.csv')
+import seaborn as sns
+exp = []
+maml = []
+promp = []
+rl2 = []
+pearl = []
+exp_s0 = pd.read_csv('csv/exp/ant-dir/progress.csv')
+maml_s0 = pd.read_csv('csv/maml/ant-dir/ant-dir_s0/progress.csv')
+maml.append(maml_s0)
+maml_s1 = pd.read_csv('csv/maml/ant-dir/ant-dir_s1/progress.csv')
+maml.append(maml_s1)
 pearl = pd.read_csv('csv/pearl/ant-dir/progress.csv')#源数据
 pearl_mirror = pd.read_csv('csv/pearl-mirror/ant-dir/progress.csv')#复现
 pearl_czx = pd.read_csv('csv/pearl-czx/ant-dir/progress.csv')
@@ -17,7 +26,7 @@ def to_percent(temp, position):
 plt.style.use('seaborn')
 plt.grid(True,color='white')
 plt.gca().xaxis.set_major_formatter(FuncFormatter(to_percent))
-plt.plot(exp['Number of train steps total'],exp['AverageReturn_all_test_tasks'],c='red')
+# plt.plot(exp['Number of train steps total'],exp['AverageReturn_all_test_tasks'],c='red')
 #plt.plot(pearl['Number of train steps total'],pearl['AverageReturn_all_test_tasks'],c='blue')
 plt.plot(pearl_mirror['Number of train steps total'],pearl_mirror['AverageReturn_all_test_tasks'],c='blue')
 #plt.plot(pearl_czx['Number of train steps total'],pearl_czx['AverageReturn_all_test_tasks'],c='black')
