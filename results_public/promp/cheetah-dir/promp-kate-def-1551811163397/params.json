@@ -1,0 +1,44 @@
+{
+  "adaptive_inner_kl_penalty": false,
+  "adaptive_outer_kl_penalty": false,
+  "algo": "promp",
+  "anneal_factor": 1.0,
+  "baseline": {
+    "$class": "meta_mb.baselines.linear_baseline.LinearFeatureBaseline"
+  },
+  "clip_eps": 0.3,
+  "clip_outer": true,
+  "discount": 0.99,
+  "env": {
+    "$class": "meta_mb.meta_envs.mujoco.half_cheetah_rand_direc.HalfCheetahRandDirecEnv"
+  },
+  "exp_tag": "v0",
+  "gae_lambda": 1,
+  "hidden_nonlinearity": {
+    "function": "tanh"
+  },
+  "hidden_sizes": [
+    64,
+    64
+  ],
+  "init_inner_kl_penalty": 0.0005,
+  "init_outer_kl_penalty": 0,
+  "inner_lr": 0.1,
+  "learn_std": true,
+  "learning_rate": 0.001,
+  "max_path_length": 200,
+  "meta_batch_size": 40,
+  "n_itr": 1001,
+  "normalize_adv": true,
+  "num_inner_grad_steps": 1,
+  "num_minibatches": 1,
+  "num_ppo_steps": 5,
+  "output_nonlinearity": null,
+  "parallel": true,
+  "positive_adv": false,
+  "rollouts_per_meta_task": 20,
+  "scope": null,
+  "seed": 2,
+  "target_inner_step": 0.01,
+  "target_outer_step": 0
+}

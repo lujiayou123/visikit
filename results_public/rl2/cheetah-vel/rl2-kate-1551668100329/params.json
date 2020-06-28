@@ -1,0 +1,28 @@
+{
+  "algo": "rl2",
+  "backprop_steps": 100,
+  "baseline": {
+    "$class": "meta_mb.baselines.linear_baseline.LinearFeatureBaseline"
+  },
+  "cell_type": "lstm",
+  "discount": 0.99,
+  "env": {
+    "$class": "meta_mb.meta_envs.mujoco.half_cheetah_rand_vel.HalfCheetahRandVelEnv"
+  },
+  "exp_tag": "v0",
+  "gae_lambda": 1.0,
+  "hidden_sizes": [
+    64
+  ],
+  "learning_rate": 0.001,
+  "max_epochs": 5,
+  "max_path_length": 200,
+  "meta_batch_size": 100,
+  "n_itr": 1001,
+  "normalize_adv": true,
+  "num_minibatches": 1,
+  "parallel": true,
+  "positive_adv": false,
+  "rollouts_per_meta_task": 2,
+  "seed": 1
+}

@@ -7,12 +7,18 @@ pearl = pd.read_csv('csv/pearl/humanoid-dir/progress.csv')
 pearl_mirror = pd.read_csv('csv/pearl-mirror/humanoid-dir/progress.csv')
 promp = pd.read_csv('csv/promp/humanoid-dir/progress.csv')
 rl2 = pd.read_csv('csv/rl2/humanoid-dir/progress.csv')
+# recurrent = pd.read_csv('csv/recurrent/humanoid-dir/oyster2020/progress.csv')
+recurrent = pd.read_csv('csv/recurrent/humanoid-dir/recurrent/progress.csv')
+
 
 def to_percent(temp, position):
     return '$%.1f$' % (temp / 1000000)
 plt.style.use('seaborn')
 plt.grid(True,color='white')
 plt.gca().xaxis.set_major_formatter(FuncFormatter(to_percent))
+plt.plot(recurrent['Number of train steps total'],recurrent['AverageTrainReturn_all_train_tasks'],c='black')
+# plt.plot(recurrent['Number of train steps total'],recurrent['AverageTrainReturn_all_train_tasks'],c='black')
+# plt.plot(recurrent['Number of train steps total'],recurrent['AverageReturn_all_test_tasks'],c='black')
 plt.plot(exp['Number of train steps total'],exp['AverageReturn_all_test_tasks'],c='red')
 plt.plot(pearl['Number of train steps total'],pearl['AverageReturn_all_test_tasks'],c='blue')
 # plt.plot(pearl_mirror['Number of train steps total'],pearl_mirror['AverageReturn_all_test_tasks'],c='orange')
